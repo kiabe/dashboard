@@ -50,7 +50,18 @@ a:hover {
 #header {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    background-color: white;
+    background-color: #d4af37;
+}
+
+#inputSearch, #buttons, #profileLink {
+    margin-top: 12px;
+}
+
+#inputSearch {
+    margin-left: 8px;
+    padding: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 #searchBar {
@@ -60,7 +71,7 @@ a:hover {
 
 #searchBar > p {
     font-size: 2vw;
-    padding-left: 8px;
+    margin-left: 8px;
     padding-bottom: 4px;
 }
 
@@ -72,18 +83,37 @@ a:hover {
     padding-right: 6px;
 }
 
+button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #5b0A91;
+  color: white;
+  border-radius: 10px;
+}
+
 button:hover {
-    background-color: greenyellow;
+    background-color: #a62c2b;
+}
+
+#profileLink {
+    padding-top: 8px;
 }
 
 .profile {
     color: black;
 }
 
+.profile:hover {
+    color: #a62c2b;
+}
+
 #subGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row: 2 / 5;
+    gap: 4px;
+    background-color: #a62c2b;
 }
 
 #pokemonComp {
@@ -91,8 +121,8 @@ button:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-row: 1 / 3;
-    gap: 10px;
-    padding: 10px;
+    gap: 14px;
+    padding: 14px;
     background-color: #5b0A91;
 }
 
@@ -106,11 +136,12 @@ button:hover {
 }
 
 .pokemon > div {
-    border: 2px double blue;
+    margin: 4px;
+    border: 2px solid #a62c2b;
 }
 
 .pokemon:hover {
-    border: 2px solid yellow;
+    outline: 2px solid orange;
 }
 
 #announcement, #trending {
